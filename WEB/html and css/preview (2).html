@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Showcase</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    scroll-behavior: smooth;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.media-card {
+    transition: transform 0.3s;
+}
+
+.media-card:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">MediaHub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#images">Images</a></li>
+        <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#audio">Audio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#embed">Embedded</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Images Section -->
+<section id="images" class="container py-5">
+  <h2 class="section-title">Images 📸</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card media-card">
+        <img src="https://picsum.photos/400/250?random=10" class="card-img-top" alt="Random Image">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card media-card">
+        <img src="https://picsum.photos/400/250?random=11" class="card-img-top" alt="Random Image">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card media-card">
+        <img src="https://picsum.photos/400/250?random=12" class="card-img-top" alt="Random Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Videos Section -->
+<section id="videos" class="container py-5">
+  <h2 class="section-title">Videos 🎥</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="ratio ratio-16x9">
+        <video controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Audio Section -->
+<section id="audio" class="container py-5">
+  <h2 class="section-title">Audio 🎵</h2>
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-6">
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+</section>
+
+<!-- Embedded Section -->
+<section id="embed" class="container py-5">
+  <h2 class="section-title">Embedded Content 🌐</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <iframe src="https://open.spotify.com/embed/track/6rqhFgbbKwnb9MLmUQDhG6" width="100%" height="80" frameborder="0" allow="encrypted-media"></iframe>
+    </div>
+    <div class="col-md-6">
+      <iframe src="https://maps.google.com/maps?q=Kuwait&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0;"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>© 2026 MediaHub | All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Arguments & Trig</title>
+</head>
+<body>
+  <p>adding arguments with a simple function</p>
+  <p id="sum-result"></p>
+
+  <p>some trig values for degrees</p>
+  <div id="trig-output"></div>
+
+  <script>
+    function total() {
+      var result = 0;
+      for (var i = 0; i < arguments.length; i++) {
+        result += arguments[i];
+      }
+      return result;
+    }
+
+    var mySum = total(3, 7, 1.5);
+    document.getElementById('sum-result').textContent = 'sum = ' + mySum;
+
+    function reportTrig(deg) {
+      var rad = deg * Math.PI / 180;
+      return 'sin(' + deg + ')=' + Math.sin(rad).toFixed(2) + ', cos(' + deg + ')=' + Math.cos(rad).toFixed(2);
+    }
+
+    var angles = [0, 30, 45, 60];
+    var output = '';
+    for (var j = 0; j < angles.length; j++) {
+      output += '<p>' + reportTrig(angles[j]) + '</p>';
+    }
+    document.getElementById('trig-output').innerHTML = output;
+  </script>
+</body>
+</html>

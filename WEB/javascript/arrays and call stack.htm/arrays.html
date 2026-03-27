@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript arrays</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+    <p id="Join"></p>
+    <p id="Demo1"></p>
+
+  <script>
+      
+        var cars = [
+            "BMW",
+            "chevrolet",
+            "toyota"
+
+        ];
+         document.getElementById("demo").innerHTML = cars;
+   document.getElementById("Join").innerHTML = cars.join(" * "); 
+   document.getElementById("myfirstpop").innerHTML = cars.pop();
+    document.getElementById("mysecondpop").innerHTML = cars.pop();
+    function addition(a,b){
+        return a+b;
+    }
+   function average(a,b){
+        return addition(a,b)/2;
+   } let result = average(10,20);
+   document.getElementById("Demo1").innerHTML = result;
+    </script>
+</body>
+</html>
