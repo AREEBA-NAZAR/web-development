@@ -1,0 +1,37 @@
+#social_media {
+    background-color: #2f3550;
+    
+}
+
+m.heading{
+   
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.media_link{
+    border:2px solid #f2a900;
+    padding:  14px 18px;
+    border-radius: 4px;
+    margin-right: 18px;
+    background: transparent;
+    text-align: left;
+}
+
+.row.pt-5{
+    gap: 18px;
+}
+
+.media_link h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.media_link i{
+    font-size: 22px;
+}
+
+.media_link.bg-warning{
+    border:2px solid #f2a900;
+    color:#f2a900;
+}

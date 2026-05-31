@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Restricted Login</title>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form id="loginForm">
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Age:</label><br>
+    <input type="number" id="age"><br><br>
+
+    <button type="submit">Login</button>
+</form>
+
+<p id="message"></p>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // stops refresh/reset
+
+    let name = document.getElementById("name").value.trim();
+    let age = document.getElementById("age").value;
+    let message = document.getElementById("message");
+
+    // Name validation
+    if (name === "") {
+        message.style.color = "red";
+        message.textContent = "Enter your name.";
+        return;
+    }
+
+    // Age validation
+    if (age === "" || isNaN(age)) {
+        message.style.color = "red";
+        message.textContent = "Enter a valid age.";
+        return;
+    }
+
+    if (age < 18) {
+        message.style.color = "red";
+        message.textContent = "Access denied. Come back when you're 18.";
+        return;
+    }
+
+    // Success
+    message.style.color = "green";
+    message.textContent = "Access granted. Welcome, " + name + "!";
+});
+</script>
+
+</body>
+</html>

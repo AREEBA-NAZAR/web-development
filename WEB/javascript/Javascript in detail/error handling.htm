@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Error Handling in JavaScript</h2>
+    <p>In JavaScript, error handling is done using the try...catch statement. This allows you to catch and handle errors gracefully without crashing the entire program.</p>
+
+    <p id="output"></p>
+    <script>
+        try {
+            addalert("Hello World!");
+        }
+        catch (err) {
+            document.getElementById("error_message").innerHTML=err.message;
+        }
+    </script>
+    
+</body>
+</html>

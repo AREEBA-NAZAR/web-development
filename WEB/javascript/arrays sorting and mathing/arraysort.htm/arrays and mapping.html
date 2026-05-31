@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var numbers = [20,77,35,95];
+
+function myFunction(num) {
+    return num * 5;
+}
+var newarray = numbers.map(myFunction);
+document.getElementById("demo").innerHTML = newarray;
+    </script>
+</body>
+</html>

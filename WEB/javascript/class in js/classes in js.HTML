@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demoI"></p>
+    <p id="demoII"></p>
+    <script>
+    class student{
+        constructor(name,year){
+            this.name = name;
+            this.year = year;
+         }
+         age () {
+            let date = new Date();
+            return date.getFullYear() - this.year;
+
+         }    
+        }
+        const student1 = new student("John", 2000);
+        document.getElementById("demoI").innerHTML = "my name is" + student1.name + " iam born in " + student1.year + " and i am " + student1.age() + " years old";
+         const student2 = new student("Jane", 1995);
+         document.getElementById("demoII").innerHTML = " my name is" + student2.name + " iam born in " + student2.year + " and i am " + student2.age() + " years old";
+        </script>
+    </body>
+</html>

@@ -1,56 +1,172 @@
- body {
-    font-family:'Arial', sans-serif;
-    background-color: #000000;
-    color:#0062ff;
-
- }
- h1 {
-    
-    color:blueviolet;
-
- }
-a {
-    color: #6600ff;
-    text-decoration: none;
+body {
+  /* first lesson*/
+  background-color: #eeeeee;
 }
-a:hover {
-    color: #ff6600;
-    text-decoration: underline;
+header {
+  /* first lesson*/
+  background-color: brown;
 }
-
-ul>li {
-    font-weight: bold;
+nav {
+  /* first lesson*/
+  background-color: aquamarine;
+}
+#intro {
+  /* first lesson*/
+  background-color: lightpink;
+  /*second lesson*/
+  font-family: Arial, Helvetica, sans-serif;
+  /*third lesson*/
+    text-align: center;
 }
 
-h1+p {
-    background-color: chartreuse;
-}
-
-ul li:hover
-{
-    color: #ff6600;
-}
-
-ul li:nth-child(3) {
-    background-color: #21246d;
-}
-
-p:not(:first-of-type) {
-    color: #ff6600;
-    text-decoration: underline;
-}
-ul li::before {
-    content: ">> ";
-    color: #6600ff;
-}
-a::after {
-    content: "";
-    font-size: 80%;
-    color: #ff6600;
+.main-section-content h2 {
+  /* first lesson*/
+  background-color: darkkhaki;
+  /*second lesson*/
+  font-family: Arial, Helvetica, sans-serif;
+  /* third lesson*/
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 
-p::first-letter {
-    font-size: 200%;
-    color: #6600ff;
+#bestsellers,
+footer {
+  /* first lesson*/
+  background-color: lightyellow;
+}
+
+header,
+nav,
+#intro,
+#main-section,
+#bestsellers,
+footer {
+  /* first lesson*/
+  border: 1px solid black;
+}
+header,
+nav,
+#main-section {
+  /* first lesson*/
+  border-radius: 10px;
+}
+h1 {
+  /* first lesson*/
+  color: white;
+  /*second lesson*/
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Third Lesson*/
+    margin: 30px;
+}
+h2,
+p {
+  /* first lesson*/
+  color: #333333;
+}
+table,
+th,
+td {
+  /* first lesson*/
+  border: 1px solid black;
+}
+tr:last-child {
+  /* first lesson*/
+  color: red;
+}
+span {
+  /* first lesson*/
+  color: blue;
+}
+footer p:first-child span {
+  /* first lesson*/
+  color: red;
+}
+.teacher-info {
+  /* first lesson*/
+  border-radius: 5px;
+  /*third lesson*/
+  margin: 10px;
+  width: 400px;
+  box-shadow: 6px 0px 21px -3px #333333;
+}
+
+button {
+  /*first lesson*/
+  background-color: red;
+  color: white;
+  /*second-lesson*/ 
+  font-size: 20px;
+  font-weight: bold;
+  /*third lesson*/
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+/*second lesson*/
+ul {
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+li a:hover {
+  color: red;
+}
+
+p {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+/*third lesson*/
+nav li {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.teacher-info div:last-child {
+  margin-left: 50px;
+}
+
+.main-section-content {
+  padding: 20px;
+}
+
+
+table {
+  margin: auto;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+footer {
+  padding: 20px;
+}
+
+#bestsellers h2 {
+    padding: 20px;
+}
+
+ol li {
+    margin-bottom: 20px;
 }
